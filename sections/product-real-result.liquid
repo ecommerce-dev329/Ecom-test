@@ -1,0 +1,43 @@
+{% schema %}
+  {
+    "name": "t:sections.product-real-result.name",
+    "tag": "section",
+    "class": "product-real-result",
+    "settings": [
+			{
+				"type": "header",
+				"content": "t:sections.product-real-result.settings.header__1.content"
+			},
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "t:sections.product-real-result.settings.heading_label.label",
+        "default": "t:sections.product-real-result.settings.heading_label.default"
+      },
+      {
+        "type": "select",
+        "id": "heading_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "t:sections.product-real-result.settings.heading_alignment.options.option_1.label"
+          },
+          {
+            "value": "center",
+            "label": "t:sections.product-real-result.settings.heading_alignment.options.option_2.label"
+          },
+          {
+            "value": "right",
+            "label": "t:sections.product-real-result.settings.heading_alignment.options.option_3.label"
+          }
+        ]
+      }
+		],
+    "presets": [
+      {
+        "name": "Resule Compare Section",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

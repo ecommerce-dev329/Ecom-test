@@ -3425,6 +3425,32 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "product-real-result": {
+      "name": "Proeuct Real Result",
+      "settings": {
+        "header__1": {
+          "content": "Heading"
+        },
+        "heading_label": {
+          "label": "Heading",
+          "default": "Your Go-To Tattoo Enhancement - Results After One Use"
+        },
+        "heading_alignment": {
+          "label": "Heading Alignment",
+          "options": {
+            "option_1": {
+              "label": "Left"
+            },
+            "option_2": {
+              "label": "Center"
+            },
+            "option_3": {
+              "label": "Right"
+            }
+          }
+        }
+      }
     }
   }
 }
