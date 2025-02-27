@@ -3427,7 +3427,7 @@
       }
     },
     "product-real-result": {
-      "name": "Proeuct Real Result",
+      "name": "Product Real Result",
       "settings": {
         "header__1": {
           "content": "Heading"
@@ -3472,6 +3472,9 @@
           "result_content": {
             "label": "Result Content",
             "default": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color"
+          },
+          "point_pos": {
+            "label": "Point Position"
           }
         }
       }

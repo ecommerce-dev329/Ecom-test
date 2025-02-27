@@ -40,9 +40,9 @@
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "image_behavior": "none",
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -59,12 +59,11 @@
         "collection": "all",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "swipe_on_mobile": false,
+        "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -72,13 +71,55 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
+      }
+    },
+    "product_real_result_dUYWhB": {
+      "type": "product-real-result",
+      "blocks": {
+        "real_result_6VjfUw": {
+          "type": "real_result",
+          "settings": {
+            "result_title": "Instantly Electrifies Tattoos",
+            "result_content": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color",
+            "point_pos": 50
+          }
+        },
+        "real_result_YHyejV": {
+          "type": "real_result",
+          "settings": {
+            "result_title": "Forms a Protective Barrier on Skin",
+            "result_content": "Contains a combination of fatty-acids, antioxidant-rich butters and lightweight oils to support skin’s natural barrier",
+            "point_pos": 50
+          }
+        },
+        "real_result_gPFF7k": {
+          "type": "real_result",
+          "settings": {
+            "result_title": "Locks in Hydration",
+            "result_content": "Tattoos appear more intense and skin appears healthier with maximum moisturization",
+            "point_pos": 50
+          }
+        }
+      },
+      "block_order": [
+        "real_result_6VjfUw",
+        "real_result_YHyejV",
+        "real_result_gPFF7k"
+      ],
+      "settings": {
+        "heading": "Your Go-To Tattoo Enhancement - Results After One Use",
+        "heading_alignment": "center",
+        "before_image": "shopify://shop_images/yellow-couch-by-black-and-white-mural_925x_67688c8d-0f0f-4a62-98e3-b32cb9afb6a2.jpg",
+        "after_image": "shopify://shop_images/diy-organic-candle_925x_a8dc41d5-47f0-41a8-9c0c-616aa9d30094.jpg"
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "product_real_result_dUYWhB"
   ]
 }
