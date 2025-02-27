@@ -4,10 +4,10 @@
     "tag": "section",
     "class": "product-real-result",
     "settings": [
-			{
-				"type": "header",
-				"content": "t:sections.product-real-result.settings.header__1.content"
-			},
+      {
+        "type": "header",
+        "content": "t:sections.product-real-result.settings.header__1.content"
+      },
       {
         "type": "text",
         "id": "heading",
@@ -21,22 +21,65 @@
           {
             "value": "left",
             "label": "t:sections.product-real-result.settings.heading_alignment.options.option_1.label"
-          },
-          {
+          }, {
             "value": "center",
             "label": "t:sections.product-real-result.settings.heading_alignment.options.option_2.label"
-          },
-          {
+          }, {
             "value": "right",
             "label": "t:sections.product-real-result.settings.heading_alignment.options.option_3.label"
           }
+        ],
+        "label": "t:sections.product-real-result.settings.heading_alignment.label",
+        "default": "center"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.product-real-result.settings.header__2.content"
+      }, {
+        "type": "image_picker",
+        "id": "before_image",
+        "label": "t:sections.product-real-result.settings.before_image.label",
+        "info": "t:sections.product-real-result.settings.before_image.info"
+      }, {
+        "type": "image_picker",
+        "id": "after_image",
+        "label": "t:sections.product-real-result.settings.after_image.label",
+        "info": "t:sections.product-real-result.settings.after_image.info"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "real_result",
+        "limit": 5,
+        "name": "t:sections.product-real-result.blocks.name",
+        "settings": [
+          {
+            "type": "text",
+            "id": "result_title",
+            "label": "t:sections.product-real-result.blocks.settings.result_title.label",
+            "default": "t:sections.product-real-result.blocks.settings.result_title.default"
+          }, {
+            "type": "text",
+            "id": "result_content",
+            "label": "t:sections.product-real-result.blocks.settings.result_content.label",
+            "default": "t:sections.product-real-result.blocks.settings.result_content.default"
+          }
         ]
       }
-		],
+    ],
     "presets": [
       {
         "name": "Resule Compare Section",
-        "settings": {}
+        "settings": {},
+        "blocks": [
+          {
+            "type": "real_result"
+          }, {
+            "type": "real_result"
+          }, {
+            "type": "real_result"
+          }
+        ]
       }
     ]
   }

@@ -3449,6 +3449,30 @@
               "label": "Right"
             }
           }
+        },
+        "header__2": {
+          "content": "Image"
+        },
+        "before_image": {
+          "label": "Before Image",
+          "info": "Please select the before image."
+        },
+        "after_image": {
+          "label": "After Image",
+          "info": "Please select the after image."
+        }
+      },
+      "blocks": {
+        "name": "Real Result",
+        "settings": {
+          "result_title": {
+            "label": "Result Title",
+            "default": "Instantly Electrifies Tattoos"
+          },
+          "result_content": {
+            "label": "Result Content",
+            "default": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color"
+          }
         }
       }
     }
