@@ -3453,13 +3453,9 @@
         "header__2": {
           "content": "Image"
         },
-        "before_image": {
-          "label": "Before Image",
-          "info": "Please select the before image."
-        },
-        "after_image": {
-          "label": "After Image",
-          "info": "Please select the after image."
+        "result_image": {
+          "label": "Image",
+          "info": "Please select the image."
         }
       },
       "blocks": {
@@ -3473,8 +3469,11 @@
             "label": "Result Content",
             "default": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color"
           },
-          "point_pos": {
-            "label": "Point Position"
+          "point_pos__x": {
+            "label": "Point Left Position"
+          },
+          "point_pos__y": {
+            "label": "Point Right Position"
           }
         }
       }

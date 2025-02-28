@@ -84,7 +84,8 @@
           "settings": {
             "result_title": "Instantly Electrifies Tattoos",
             "result_content": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color",
-            "point_pos": 50
+            "point_pos__x": 60,
+            "point_pos__y": 40
           }
         },
         "real_result_YHyejV": {
@@ -92,7 +93,8 @@
           "settings": {
             "result_title": "Forms a Protective Barrier on Skin",
             "result_content": "Contains a combination of fatty-acids, antioxidant-rich butters and lightweight oils to support skin’s natural barrier",
-            "point_pos": 50
+            "point_pos__x": 75,
+            "point_pos__y": 45
           }
         },
         "real_result_gPFF7k": {
@@ -100,7 +102,8 @@
           "settings": {
             "result_title": "Locks in Hydration",
             "result_content": "Tattoos appear more intense and skin appears healthier with maximum moisturization",
-            "point_pos": 50
+            "point_pos__x": 65,
+            "point_pos__y": 70
           }
         }
       },
@@ -112,8 +115,7 @@
       "settings": {
         "heading": "Your Go-To Tattoo Enhancement - Results After One Use",
         "heading_alignment": "center",
-        "before_image": "shopify://shop_images/yellow-couch-by-black-and-white-mural_925x_67688c8d-0f0f-4a62-98e3-b32cb9afb6a2.jpg",
-        "after_image": "shopify://shop_images/diy-organic-candle_925x_a8dc41d5-47f0-41a8-9c0c-616aa9d30094.jpg"
+        "result_image": "shopify://shop_images/22_0906_MR_B_A_Balm_v4.webp"
       }
     }
   },

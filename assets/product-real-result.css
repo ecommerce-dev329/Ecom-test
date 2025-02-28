@@ -1,0 +1,34 @@
+.product-real-result-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.product-real-result-image-wrapper {
+  line-height: 0;
+  width: 100%;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.product-real-result-image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.product-real-result-item {
+  position: absolute;
+  max-width: 140px;
+  display: flex;
+}
+.product-real-result-item-point {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  color: #fff;
+  font-size: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  background-color: #00000021;
+}

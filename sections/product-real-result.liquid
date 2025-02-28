@@ -1,3 +1,30 @@
+{{ 'product-real-result.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  {% for block in section.blocks %}
+    .product-real-result-item-{{ forloop.index }} {
+      top: {{ block.settings.point_pos__y }}%;
+      left: {{ block.settings.point_pos__x }}%;
+    }
+  {% endfor %}
+{%- endstyle -%}
+
+<div class="product-real-result-wrapper page-width">
+  <div class="product-real-result-image-wrapper">
+    {{ section.settings.result_image | image_url: width: 800 | image_tag: alt: 'Product Real Result Image', loading: 'lazy' }}
+  </div>
+  {%- if section.blocks != blank -%}
+    {% for block in section.blocks %}
+      <div class="product-real-result-item product-real-result-item-{{ forloop.index }}">
+        <div class="product-real-result-item-point">+</div>
+        <div class="product-real-result-item-content-wrapper">
+          <div class="product-real-result-item-title">{{ block.settings.result_title }}</div>
+          <div class="product-real-result-item-content">{{ block.settings.result_content }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  {%- endif -%}
+</div>
 {% schema %}
   {
     "name": "t:sections.product-real-result.name",
@@ -37,21 +64,16 @@
         "content": "t:sections.product-real-result.settings.header__2.content"
       }, {
         "type": "image_picker",
-        "id": "before_image",
-        "label": "t:sections.product-real-result.settings.before_image.label",
-        "info": "t:sections.product-real-result.settings.before_image.info"
-      }, {
-        "type": "image_picker",
-        "id": "after_image",
-        "label": "t:sections.product-real-result.settings.after_image.label",
-        "info": "t:sections.product-real-result.settings.after_image.info"
+        "id": "result_image",
+        "label": "t:sections.product-real-result.settings.result_image.label",
+        "info": "t:sections.product-real-result.settings.result_image.info"
       }
     ],
     "blocks": [
       {
+        "name": "t:sections.product-real-result.blocks.name",
         "type": "real_result",
         "limit": 5,
-        "name": "t:sections.product-real-result.blocks.name",
         "settings": [
           {
             "type": "text",
@@ -65,12 +87,21 @@
             "default": "t:sections.product-real-result.blocks.settings.result_content.default"
           }, {
             "type": "range",
-            "id": "point_pos",
+            "id": "point_pos__x",
             "min": 0,
             "max": 100,
             "step": 1,
             "unit": "%",
-            "label": "t:sections.product-real-result.blocks.settings.point_pos.label",
+            "label": "t:sections.product-real-result.blocks.settings.point_pos__x.label",
+            "default": 50
+          }, {
+            "type": "range",
+            "id": "point_pos__y",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "%",
+            "label": "t:sections.product-real-result.blocks.settings.point_pos__y.label",
             "default": 50
           }
         ]
