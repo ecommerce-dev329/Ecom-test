@@ -2,29 +2,45 @@
 
 {%- style -%}
   {% for block in section.blocks %}
-    .product-real-result-item-{{ forloop.index }} {
+    .result-item-{{ forloop.index }} {
       top: {{ block.settings.point_pos__y }}%;
       left: {{ block.settings.point_pos__x }}%;
+      z-index: {{ forloop.length | minus: forloop.index }};
     }
   {% endfor %}
 {%- endstyle -%}
 
-<div class="product-real-result-wrapper page-width">
-  <div class="product-real-result-image-wrapper">
-    {{ section.settings.result_image | image_url: width: 800 | image_tag: alt: 'Product Real Result Image', loading: 'lazy' }}
-  </div>
-  {%- if section.blocks != blank -%}
-    {% for block in section.blocks %}
-      <div class="product-real-result-item product-real-result-item-{{ forloop.index }}">
-        <div class="product-real-result-item-point">+</div>
-        <div class="product-real-result-item-content-wrapper">
-          <div class="product-real-result-item-title">{{ block.settings.result_title }}</div>
-          <div class="product-real-result-item-content">{{ block.settings.result_content }}</div>
-        </div>
+<div class="section-product-real-result page-width">
+  <div class="result-wrapper">
+    <div class="result-with-image-wrapper">
+      {{ section.settings.result_image | image_url: width: 800 | image_tag: alt: 'Product Real Result Image', loading: 'lazy' }}
+      {%- if section.blocks != blank -%}
+        {% for block in section.blocks %}
+          <div class="result-item result-item-{{ forloop.index }}">
+            <div class="result-item-point">+</div>
+            <div class="result-item-content-wrapper">
+              <div class="result-item-title">{{ block.settings.result_title }}</div>
+              <div class="result-item-content">{{ block.settings.result_content }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      {%- endif -%}
+    </div>
+    {%- if section.blocks != blank -%}
+      <div class="result-bottom-item-wrapper">
+        {% for block in section.blocks %}
+          <div class="result-bottom-item">
+            <div class="result-bottom-title">{{ block.settings.result_title }}</div>
+            <div class="result-bottom-content">{{ block.settings.result_content }}</div>
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
-  {%- endif -%}
+    {%- endif -%}
+  </div>
 </div>
+
+{{ 'product-real-result.js' | asset_url | script_tag }}
+
 {% schema %}
   {
     "name": "t:sections.product-real-result.name",
