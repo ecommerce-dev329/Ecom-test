@@ -11,13 +11,16 @@
 {%- endstyle -%}
 
 <div class="section-product-real-result page-width">
+  <div class="heading-wrapper">
+    <h2>{{ section.settings.heading }}</h2>
+  </div>
   <div class="result-wrapper">
     <div class="result-with-image-wrapper">
       {{ section.settings.result_image | image_url: width: 800 | image_tag: alt: 'Product Real Result Image', loading: 'lazy' }}
       {%- if section.blocks != blank -%}
         {% for block in section.blocks %}
           <div class="result-item result-item-{{ forloop.index }}">
-            <div class="result-item-point">+</div>
+            <div class="result-item-point" data-index="{{ forloop.index }}">+</div>
             <div class="result-item-content-wrapper">
               <div class="result-item-title">{{ block.settings.result_title }}</div>
               <div class="result-item-content">{{ block.settings.result_content }}</div>
