@@ -3453,14 +3453,24 @@
         "header__2": {
           "content": "Image"
         },
-        "result_image": {
-          "label": "Image",
-          "info": "Please select the image."
+        "result_desktop_image": {
+          "label": "Desktop Image",
+          "info": "Please select the desktop image."
+        },
+        "result_mobile_image": {
+          "label": "Mobile Image",
+          "info": "Please select the mobile image."
         }
       },
       "blocks": {
         "name": "Real Result",
         "settings": {
+          "header__1": {
+            "content": "Real Result Content"
+          },
+          "header__2": {
+            "content": "Description Position"
+          },
           "result_title": {
             "label": "Result Title",
             "default": "Instantly Electrifies Tattoos"
@@ -3469,11 +3479,21 @@
             "label": "Result Content",
             "default": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color"
           },
-          "point_pos__x": {
-            "label": "Point Left Position"
+          "desktop_point_pos__x": {
+            "label": "Desktop Left",
+            "info": "Point left position on desktop."
           },
-          "point_pos__y": {
-            "label": "Point Right Position"
+          "desktop_point_pos__y": {
+            "label": "Desktop Top",
+            "info": "Point top position on desktop."
+          },
+          "mobile_point_pos__x": {
+            "label": "Mobile Left",
+            "info": "Point left position on mobile."
+          },
+          "mobile_point_pos__y": {
+            "label": "Mobile Top",
+            "info": "Point top position on mobile."
           }
         }
       }

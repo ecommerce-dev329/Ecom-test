@@ -64,7 +64,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -84,8 +84,10 @@
           "settings": {
             "result_title": "Instantly Electrifies Tattoos",
             "result_content": "Formulated to maintain tattoos' vibrancy with visible results after 1 use - black, gray and color",
-            "point_pos__x": 60,
-            "point_pos__y": 40
+            "desktop_point_pos__x": 63,
+            "desktop_point_pos__y": 40,
+            "mobile_point_pos__x": 25,
+            "mobile_point_pos__y": 70
           }
         },
         "real_result_YHyejV": {
@@ -93,8 +95,10 @@
           "settings": {
             "result_title": "Forms a Protective Barrier on Skin",
             "result_content": "Contains a combination of fatty-acids, antioxidant-rich butters and lightweight oils to support skin’s natural barrier",
-            "point_pos__x": 75,
-            "point_pos__y": 45
+            "desktop_point_pos__x": 70,
+            "desktop_point_pos__y": 73,
+            "mobile_point_pos__x": 50,
+            "mobile_point_pos__y": 73
           }
         },
         "real_result_gPFF7k": {
@@ -102,8 +106,10 @@
           "settings": {
             "result_title": "Locks in Hydration",
             "result_content": "Tattoos appear more intense and skin appears healthier with maximum moisturization",
-            "point_pos__x": 65,
-            "point_pos__y": 70
+            "desktop_point_pos__x": 75,
+            "desktop_point_pos__y": 45,
+            "mobile_point_pos__x": 37,
+            "mobile_point_pos__y": 90
           }
         }
       },
@@ -115,7 +121,8 @@
       "settings": {
         "heading": "Your Go-To Tattoo Enhancement - Results After One Use",
         "heading_alignment": "center",
-        "result_image": "shopify://shop_images/22_0906_MR_B_A_Balm_v4.webp"
+        "result_desktop_image": "shopify://shop_images/22_0906_MR_B_A_Balm_v4.webp",
+        "result_mobile_image": "shopify://shop_images/before-af.png"
       }
     }
   },
