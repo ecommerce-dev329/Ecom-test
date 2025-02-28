@@ -8,11 +8,18 @@
       z-index: {{ forloop.length | minus: forloop.index }};
     }
   {% endfor %}
+  .heading-wrapper h1 {
+    font-size: 50px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 0 0 45px;
+    text-align: {{ section.settings.heading_alignment }};
+  }
 {%- endstyle -%}
 
 <div class="section-product-real-result page-width">
   <div class="heading-wrapper">
-    <h2>{{ section.settings.heading }}</h2>
+    <h1>{{ section.settings.heading | upcase }}</h1>
   </div>
   <div class="result-wrapper">
     <div class="result-with-image-wrapper">

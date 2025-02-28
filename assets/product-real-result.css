@@ -39,6 +39,7 @@
   color: #fff;
   font-size: 25px;
   aspect-ratio: 1;
+  cursor: pointer;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -48,7 +49,6 @@
 .result-item-title,
 .result-bottom-title {
   font-size: 12px;
-  font-weight: 700;
   line-height: 21px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,6 +60,9 @@
   overflow: hidden;
   line-height: 21px;
   transition: height 0.3s ease-in-out;
+}
+.result-item.active .result-item-title {
+  font-weight: 700;
 }
 /* End */
 .result-bottom-item-wrapper {
